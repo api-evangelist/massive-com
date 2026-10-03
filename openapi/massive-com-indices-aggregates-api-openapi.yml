@@ -1,8 +1,8 @@
 openapi: 3.2.0
 info:
-  title: Massive Com Indices:aggregates API
+  description: The future of fintech.
+  title: Polygon Indices:aggregates API
   version: 1.0.0
-  description: 'Operations tagged indices:aggregates across 2 of this provider''s published API definitions: polygon-openapi-original.json, polygon-indices-aggregates-api-openapi.yml. Each path carries the servers of the definition it was published in.'
 servers:
 - description: Polygon Platform API
   url: https://api.polygon.io
@@ -245,11 +245,6 @@ paths:
       x-polygon-entitlement-market-type:
         description: Indices data
         name: indices
-    servers:
-    - description: Polygon Platform API
-      url: https://api.polygon.io
-    - description: Polygon Platform API (Staging)
-      url: https://api.staging.polygon.io
   /v1/indicators/macd/{indicesTicker}:
     x-polygon-ignore: true
     get:
@@ -514,11 +509,6 @@ paths:
       x-polygon-entitlement-market-type:
         description: Indices data
         name: indices
-    servers:
-    - description: Polygon Platform API
-      url: https://api.polygon.io
-    - description: Polygon Platform API (Staging)
-      url: https://api.staging.polygon.io
   /v1/indicators/rsi/{indicesTicker}:
     x-polygon-ignore: true
     get:
@@ -751,11 +741,6 @@ paths:
       x-polygon-entitlement-market-type:
         description: Indices data
         name: indices
-    servers:
-    - description: Polygon Platform API
-      url: https://api.polygon.io
-    - description: Polygon Platform API (Staging)
-      url: https://api.staging.polygon.io
   /v1/indicators/sma/{indicesTicker}:
     x-polygon-ignore: true
     get:
@@ -988,11 +973,6 @@ paths:
       x-polygon-entitlement-market-type:
         description: Indices data
         name: indices
-    servers:
-    - description: Polygon Platform API
-      url: https://api.polygon.io
-    - description: Polygon Platform API (Staging)
-      url: https://api.staging.polygon.io
   /v2/aggs/ticker/{indicesTicker}/prev:
     get:
       description: Get the previous day's open, high, low, and close (OHLC) for the specified index.
@@ -1104,11 +1084,6 @@ paths:
       x-polygon-entitlement-market-type:
         description: Indices data
         name: indices
-    servers:
-    - description: Polygon Platform API
-      url: https://api.polygon.io
-    - description: Polygon Platform API (Staging)
-      url: https://api.staging.polygon.io
   /v2/aggs/ticker/{indicesTicker}/range/{multiplier}/{timespan}/{from}/{to}:
     get:
       description: 'Get aggregate bars for an index over a given date range in custom time window sizes.
@@ -1292,20 +1267,12 @@ paths:
       x-polygon-entitlement-market-type:
         description: Indices data
         name: indices
-    servers:
-    - description: Polygon Platform API
-      url: https://api.polygon.io
-    - description: Polygon Platform API (Staging)
-      url: https://api.staging.polygon.io
 components:
   securitySchemes:
     apiKey:
       in: query
       name: apiKey
       type: apiKey
-x-refined-from:
-- polygon-openapi-original.json
-- polygon-indices-aggregates-api-openapi.yml
 x-polygon-order:
   crypto:
     market:

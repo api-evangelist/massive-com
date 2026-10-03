@@ -1,8 +1,8 @@
 openapi: 3.2.0
 info:
-  title: Massive Com Financials API
+  description: The future of fintech.
+  title: Polygon Financials API
   version: 1.0.0
-  description: 'Operations tagged financials across 2 of this provider''s published API definitions: polygon-openapi-original.json, polygon-financials-api-openapi.yml. Each path carries the servers of the definition it was published in.'
 servers:
 - description: Polygon Platform API
   url: https://api.polygon.io
@@ -460,11 +460,6 @@ paths:
       - Financials
       summary: Get stocks financials v1 balance sheets
       x-summary-source: derived
-    servers:
-    - description: Polygon Platform API
-      url: https://api.polygon.io
-    - description: Polygon Platform API (Staging)
-      url: https://api.staging.polygon.io
   /stocks/financials/v1/cash-flow-statements:
     get:
       description: A comprehensive financial dataset containing quarterly, annual, and trailing twelve-month cash flow statement data for public companies. Includes detailed operating, investing, and financing cash flows with proper TTM calculations that sum all cash flow components over four quarters. TTM records are validated to ensure exactly four distinct quarters spanning 250-400 days for accurate trailing twelve-month cash flow analysis.
@@ -880,11 +875,6 @@ paths:
       - Financials
       summary: Get stocks financials v1 cash flow statements
       x-summary-source: derived
-    servers:
-    - description: Polygon Platform API
-      url: https://api.polygon.io
-    - description: Polygon Platform API (Staging)
-      url: https://api.staging.polygon.io
   /stocks/financials/v1/income-statements:
     get:
       description: A comprehensive database of income statement financial data for public companies, including key metrics such as revenue, expenses, and net income for various reporting periods.
@@ -1310,11 +1300,6 @@ paths:
       - Financials
       summary: Get stocks financials v1 income statements
       x-summary-source: derived
-    servers:
-    - description: Polygon Platform API
-      url: https://api.polygon.io
-    - description: Polygon Platform API (Staging)
-      url: https://api.staging.polygon.io
   /stocks/financials/v1/ratios:
     get:
       description: A comprehensive financial ratios dataset providing key valuation, profitability, liquidity, and leverage metrics for public companies. Combines data from income statements, balance sheets, and cash flow statements with daily stock prices to calculate ratios on a daily basis. Uses trailing twelve months (TTM) data for income/cash flow metrics and quarterly data for balance sheet items. Fundamental data updates are applied starting from each filing's period end date. Market cap calculations use point-in-time shares outstanding for historical accuracy.
@@ -2170,20 +2155,12 @@ paths:
       - Financials
       summary: Get stocks financials v1 ratios
       x-summary-source: derived
-    servers:
-    - description: Polygon Platform API
-      url: https://api.polygon.io
-    - description: Polygon Platform API (Staging)
-      url: https://api.staging.polygon.io
 components:
   securitySchemes:
     apiKey:
       in: query
       name: apiKey
       type: apiKey
-x-refined-from:
-- polygon-openapi-original.json
-- polygon-financials-api-openapi.yml
 x-polygon-order:
   crypto:
     market:

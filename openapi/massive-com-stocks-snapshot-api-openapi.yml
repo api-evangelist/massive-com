@@ -1,8 +1,8 @@
 openapi: 3.2.0
 info:
-  title: Massive Com Stocks:snapshot API
+  description: The future of fintech.
+  title: Polygon Stocks:snapshot API
   version: 1.0.0
-  description: 'Operations tagged stocks:snapshot across 2 of this provider''s published API definitions: polygon-openapi-original.json, polygon-stocks-snapshot-api-openapi.yml. Each path carries the servers of the definition it was published in.'
 servers:
 - description: Polygon Platform API
   url: https://api.polygon.io
@@ -366,11 +366,6 @@ paths:
       x-polygon-entitlement-market-type:
         description: Stocks data
         name: stocks
-    servers:
-    - description: Polygon Platform API
-      url: https://api.polygon.io
-    - description: Polygon Platform API (Staging)
-      url: https://api.staging.polygon.io
   /v2/snapshot/locale/us/markets/stocks/tickers/{stocksTicker}:
     get:
       description: 'Get the most up-to-date market data for a single traded stock ticker.
@@ -719,11 +714,6 @@ paths:
       x-polygon-entitlement-market-type:
         description: Stocks data
         name: stocks
-    servers:
-    - description: Polygon Platform API
-      url: https://api.polygon.io
-    - description: Polygon Platform API (Staging)
-      url: https://api.staging.polygon.io
   /v2/snapshot/locale/us/markets/stocks/{direction}:
     get:
       description: 'Get the most up-to-date market data for the current top 20 gainers or losers of the day in the stocks/equities markets.
@@ -1084,20 +1074,12 @@ paths:
       x-polygon-entitlement-market-type:
         description: Stocks data
         name: stocks
-    servers:
-    - description: Polygon Platform API
-      url: https://api.polygon.io
-    - description: Polygon Platform API (Staging)
-      url: https://api.staging.polygon.io
 components:
   securitySchemes:
     apiKey:
       in: query
       name: apiKey
       type: apiKey
-x-refined-from:
-- polygon-openapi-original.json
-- polygon-stocks-snapshot-api-openapi.yml
 x-polygon-order:
   crypto:
     market:

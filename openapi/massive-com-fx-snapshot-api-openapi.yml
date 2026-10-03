@@ -1,8 +1,8 @@
 openapi: 3.2.0
 info:
-  title: Massive Com Fx:snapshot API
+  description: The future of fintech.
+  title: Polygon Fx:snapshot API
   version: 1.0.0
-  description: 'Operations tagged fx:snapshot across 2 of this provider''s published API definitions: polygon-openapi-original.json, polygon-fx-snapshot-api-openapi.yml. Each path carries the servers of the definition it was published in.'
 servers:
 - description: Polygon Platform API
   url: https://api.polygon.io
@@ -252,11 +252,6 @@ paths:
       x-polygon-entitlement-market-type:
         description: Forex data
         name: fx
-    servers:
-    - description: Polygon Platform API
-      url: https://api.polygon.io
-    - description: Polygon Platform API (Staging)
-      url: https://api.staging.polygon.io
   /v2/snapshot/locale/global/markets/forex/tickers/{ticker}:
     get:
       description: 'Get the current minute, day, and previous day’s aggregate, as well as the last trade and quote for a single traded currency symbol.
@@ -503,11 +498,6 @@ paths:
       x-polygon-entitlement-market-type:
         description: Forex data
         name: fx
-    servers:
-    - description: Polygon Platform API
-      url: https://api.polygon.io
-    - description: Polygon Platform API (Staging)
-      url: https://api.staging.polygon.io
   /v2/snapshot/locale/global/markets/forex/{direction}:
     get:
       description: 'Get the current top 20 gainers or losers of the day in forex markets.
@@ -758,20 +748,12 @@ paths:
       x-polygon-entitlement-market-type:
         description: Forex data
         name: fx
-    servers:
-    - description: Polygon Platform API
-      url: https://api.polygon.io
-    - description: Polygon Platform API (Staging)
-      url: https://api.staging.polygon.io
 components:
   securitySchemes:
     apiKey:
       in: query
       name: apiKey
       type: apiKey
-x-refined-from:
-- polygon-openapi-original.json
-- polygon-fx-snapshot-api-openapi.yml
 x-polygon-order:
   crypto:
     market:

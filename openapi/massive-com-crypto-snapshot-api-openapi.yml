@@ -1,8 +1,8 @@
 openapi: 3.2.0
 info:
-  title: Massive Com Crypto:snapshot API
+  description: The future of fintech.
+  title: Polygon Crypto:snapshot API
   version: 1.0.0
-  description: 'Operations tagged crypto:snapshot across 2 of this provider''s published API definitions: polygon-openapi-original.json, polygon-crypto-snapshot-api-openapi.yml. Each path carries the servers of the definition it was published in.'
 servers:
 - description: Polygon Platform API
   url: https://api.polygon.io
@@ -298,11 +298,6 @@ paths:
       x-polygon-entitlement-market-type:
         description: Crypto data
         name: crypto
-    servers:
-    - description: Polygon Platform API
-      url: https://api.polygon.io
-    - description: Polygon Platform API (Staging)
-      url: https://api.staging.polygon.io
   /v2/snapshot/locale/global/markets/crypto/tickers/{ticker}:
     get:
       description: 'Get the current minute, day, and previous day’s aggregate, as well as the last trade and quote for a single traded cryptocurrency symbol.
@@ -594,11 +589,6 @@ paths:
       x-polygon-entitlement-market-type:
         description: Crypto data
         name: crypto
-    servers:
-    - description: Polygon Platform API
-      url: https://api.polygon.io
-    - description: Polygon Platform API (Staging)
-      url: https://api.staging.polygon.io
   /v2/snapshot/locale/global/markets/crypto/tickers/{ticker}/book:
     get:
       description: 'Get the current level 2 book of a single ticker. This is the combined book from all of the exchanges.
@@ -741,11 +731,6 @@ paths:
       x-polygon-entitlement-market-type:
         description: Crypto data
         name: crypto
-    servers:
-    - description: Polygon Platform API
-      url: https://api.polygon.io
-    - description: Polygon Platform API (Staging)
-      url: https://api.staging.polygon.io
   /v2/snapshot/locale/global/markets/crypto/{direction}:
     get:
       description: 'Get the current top 20 gainers or losers of the day in cryptocurrency markets.
@@ -1036,20 +1021,12 @@ paths:
       x-polygon-entitlement-market-type:
         description: Crypto data
         name: crypto
-    servers:
-    - description: Polygon Platform API
-      url: https://api.polygon.io
-    - description: Polygon Platform API (Staging)
-      url: https://api.staging.polygon.io
 components:
   securitySchemes:
     apiKey:
       in: query
       name: apiKey
       type: apiKey
-x-refined-from:
-- polygon-openapi-original.json
-- polygon-crypto-snapshot-api-openapi.yml
 x-polygon-order:
   crypto:
     market:

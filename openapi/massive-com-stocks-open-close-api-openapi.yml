@@ -1,8 +1,8 @@
 openapi: 3.2.0
 info:
-  title: Massive Com Stocks:open Close API
+  description: The future of fintech.
+  title: Polygon Stocks:open Close API
   version: 1.0.0
-  description: 'Operations tagged stocks:open-close across 2 of this provider''s published API definitions: polygon-openapi-original.json, polygon-stocks-open-close-api-openapi.yml. Each path carries the servers of the definition it was published in.'
 servers:
 - description: Polygon Platform API
   url: https://api.polygon.io
@@ -111,11 +111,6 @@ paths:
       x-polygon-entitlement-market-type:
         description: Indices data
         name: indices
-    servers:
-    - description: Polygon Platform API
-      url: https://api.polygon.io
-    - description: Polygon Platform API (Staging)
-      url: https://api.staging.polygon.io
   /v1/open-close/{stocksTicker}/{date}:
     get:
       description: Get the open, close and afterhours prices of a stock symbol on a certain date.
@@ -233,20 +228,12 @@ paths:
       x-polygon-entitlement-market-type:
         description: Stocks data
         name: stocks
-    servers:
-    - description: Polygon Platform API
-      url: https://api.polygon.io
-    - description: Polygon Platform API (Staging)
-      url: https://api.staging.polygon.io
 components:
   securitySchemes:
     apiKey:
       in: query
       name: apiKey
       type: apiKey
-x-refined-from:
-- polygon-openapi-original.json
-- polygon-stocks-open-close-api-openapi.yml
 x-polygon-order:
   crypto:
     market:

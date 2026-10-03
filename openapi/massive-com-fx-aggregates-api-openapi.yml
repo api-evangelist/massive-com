@@ -1,8 +1,8 @@
 openapi: 3.2.0
 info:
-  title: Massive Com Fx:aggregates API
+  description: The future of fintech.
+  title: Polygon Fx:aggregates API
   version: 1.0.0
-  description: 'Operations tagged fx:aggregates across 2 of this provider''s published API definitions: polygon-openapi-original.json, polygon-fx-aggregates-api-openapi.yml. Each path carries the servers of the definition it was published in.'
 servers:
 - description: Polygon Platform API
   url: https://api.polygon.io
@@ -270,11 +270,6 @@ paths:
       x-polygon-entitlement-market-type:
         description: Forex data
         name: fx
-    servers:
-    - description: Polygon Platform API
-      url: https://api.polygon.io
-    - description: Polygon Platform API (Staging)
-      url: https://api.staging.polygon.io
   /v1/indicators/macd/{fxTicker}:
     x-polygon-ignore: true
     get:
@@ -564,11 +559,6 @@ paths:
       x-polygon-entitlement-market-type:
         description: Forex data
         name: fx
-    servers:
-    - description: Polygon Platform API
-      url: https://api.polygon.io
-    - description: Polygon Platform API (Staging)
-      url: https://api.staging.polygon.io
   /v1/indicators/rsi/{fxTicker}:
     x-polygon-ignore: true
     get:
@@ -826,11 +816,6 @@ paths:
       x-polygon-entitlement-market-type:
         description: Forex data
         name: fx
-    servers:
-    - description: Polygon Platform API
-      url: https://api.polygon.io
-    - description: Polygon Platform API (Staging)
-      url: https://api.staging.polygon.io
   /v1/indicators/sma/{fxTicker}:
     x-polygon-ignore: true
     get:
@@ -1105,11 +1090,6 @@ paths:
       x-polygon-entitlement-market-type:
         description: Forex data
         name: fx
-    servers:
-    - description: Polygon Platform API
-      url: https://api.polygon.io
-    - description: Polygon Platform API (Staging)
-      url: https://api.staging.polygon.io
   /v2/aggs/grouped/locale/global/market/fx/{date}:
     get:
       description: Get the daily open, high, low, and close (OHLC) for the entire forex markets.
@@ -1270,11 +1250,6 @@ paths:
       x-polygon-entitlement-market-type:
         description: Forex data
         name: fx
-    servers:
-    - description: Polygon Platform API
-      url: https://api.polygon.io
-    - description: Polygon Platform API (Staging)
-      url: https://api.staging.polygon.io
   /v2/aggs/ticker/{forexTicker}/prev:
     get:
       description: Get the previous day's open, high, low, and close (OHLC) for the specified forex pair.
@@ -1419,11 +1394,6 @@ paths:
       x-polygon-entitlement-market-type:
         description: Forex data
         name: fx
-    servers:
-    - description: Polygon Platform API
-      url: https://api.polygon.io
-    - description: Polygon Platform API (Staging)
-      url: https://api.staging.polygon.io
   /v2/aggs/ticker/{forexTicker}/range/{multiplier}/{timespan}/{from}/{to}:
     get:
       description: 'Get aggregate bars for a forex pair over a given date range in custom time window sizes.
@@ -1629,20 +1599,12 @@ paths:
       x-polygon-entitlement-market-type:
         description: Forex data
         name: fx
-    servers:
-    - description: Polygon Platform API
-      url: https://api.polygon.io
-    - description: Polygon Platform API (Staging)
-      url: https://api.staging.polygon.io
 components:
   securitySchemes:
     apiKey:
       in: query
       name: apiKey
       type: apiKey
-x-refined-from:
-- polygon-openapi-original.json
-- polygon-fx-aggregates-api-openapi.yml
 x-polygon-order:
   crypto:
     market:

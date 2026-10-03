@@ -1,8 +1,8 @@
 openapi: 3.2.0
 info:
-  title: Massive Com Etfglobal API
+  description: The future of fintech.
+  title: Polygon Etfglobal API
   version: 1.0.0
-  description: 'Operations tagged etfglobal across 2 of this provider''s published API definitions: polygon-openapi-original.json, polygon-etfglobal-api-openapi.yml. Each path carries the servers of the definition it was published in.'
 servers:
 - description: Polygon Platform API
   url: https://api.polygon.io
@@ -640,11 +640,6 @@ paths:
       - etfglobal
       summary: Get etf global v1 analytics
       x-summary-source: derived
-    servers:
-    - description: Polygon Platform API
-      url: https://api.polygon.io
-    - description: Polygon Platform API (Staging)
-      url: https://api.staging.polygon.io
   /etf-global/v1/constituents:
     get:
       description: ETF Global constituents data containing detailed information about the securities held within ETFs, including weights, market values, and security identifiers.
@@ -1034,11 +1029,6 @@ paths:
       - etfglobal
       summary: Get etf global v1 constituents
       x-summary-source: derived
-    servers:
-    - description: Polygon Platform API
-      url: https://api.polygon.io
-    - description: Polygon Platform API (Staging)
-      url: https://api.staging.polygon.io
   /etf-global/v1/fund-flows:
     get:
       description: ETF Global fund flow data containing information about ETF share movements, net asset values, and fund flow metrics.
@@ -1239,11 +1229,6 @@ paths:
       - etfglobal
       summary: Get etf global v1 fund flows
       x-summary-source: derived
-    servers:
-    - description: Polygon Platform API
-      url: https://api.polygon.io
-    - description: Polygon Platform API (Staging)
-      url: https://api.staging.polygon.io
   /etf-global/v1/profiles:
     get:
       description: ETF Global industry profile data containing comprehensive ETF metadata including financial metrics, operational details, and exposure information.
@@ -1941,11 +1926,6 @@ paths:
       - etfglobal
       summary: Get etf global v1 profiles
       x-summary-source: derived
-    servers:
-    - description: Polygon Platform API
-      url: https://api.polygon.io
-    - description: Polygon Platform API (Staging)
-      url: https://api.staging.polygon.io
   /etf-global/v1/taxonomies:
     get:
       description: ETF Global taxonomy data containing detailed classification and categorization information for ETFs including investment strategy, methodology, and structural characteristics.
@@ -2262,20 +2242,12 @@ paths:
       - etfglobal
       summary: Get etf global v1 taxonomies
       x-summary-source: derived
-    servers:
-    - description: Polygon Platform API
-      url: https://api.polygon.io
-    - description: Polygon Platform API (Staging)
-      url: https://api.staging.polygon.io
 components:
   securitySchemes:
     apiKey:
       in: query
       name: apiKey
       type: apiKey
-x-refined-from:
-- polygon-openapi-original.json
-- polygon-etfglobal-api-openapi.yml
 x-polygon-order:
   crypto:
     market:

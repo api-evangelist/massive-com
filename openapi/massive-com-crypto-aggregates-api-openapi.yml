@@ -1,8 +1,8 @@
 openapi: 3.2.0
 info:
-  title: Massive Com Crypto:aggregates API
+  description: The future of fintech.
+  title: Polygon Crypto:aggregates API
   version: 1.0.0
-  description: 'Operations tagged crypto:aggregates across 2 of this provider''s published API definitions: polygon-openapi-original.json, polygon-crypto-aggregates-api-openapi.yml. Each path carries the servers of the definition it was published in.'
 servers:
 - description: Polygon Platform API
   url: https://api.polygon.io
@@ -261,11 +261,6 @@ paths:
       x-polygon-entitlement-market-type:
         description: Crypto data
         name: crypto
-    servers:
-    - description: Polygon Platform API
-      url: https://api.polygon.io
-    - description: Polygon Platform API (Staging)
-      url: https://api.staging.polygon.io
   /v1/indicators/macd/{cryptoTicker}:
     x-polygon-ignore: true
     get:
@@ -546,11 +541,6 @@ paths:
       x-polygon-entitlement-market-type:
         description: Crypto data
         name: crypto
-    servers:
-    - description: Polygon Platform API
-      url: https://api.polygon.io
-    - description: Polygon Platform API (Staging)
-      url: https://api.staging.polygon.io
   /v1/indicators/rsi/{cryptoTicker}:
     x-polygon-ignore: true
     get:
@@ -799,11 +789,6 @@ paths:
       x-polygon-entitlement-market-type:
         description: Crypto data
         name: crypto
-    servers:
-    - description: Polygon Platform API
-      url: https://api.polygon.io
-    - description: Polygon Platform API (Staging)
-      url: https://api.staging.polygon.io
   /v1/indicators/sma/{cryptoTicker}:
     x-polygon-ignore: true
     get:
@@ -1069,11 +1054,6 @@ paths:
       x-polygon-entitlement-market-type:
         description: Crypto data
         name: crypto
-    servers:
-    - description: Polygon Platform API
-      url: https://api.polygon.io
-    - description: Polygon Platform API (Staging)
-      url: https://api.staging.polygon.io
   /v2/aggs/grouped/locale/global/market/crypto/{date}:
     get:
       description: Get the daily open, high, low, and close (OHLC) for the entire cryptocurrency markets.
@@ -1234,11 +1214,6 @@ paths:
       x-polygon-entitlement-market-type:
         description: Crypto data
         name: crypto
-    servers:
-    - description: Polygon Platform API
-      url: https://api.polygon.io
-    - description: Polygon Platform API (Staging)
-      url: https://api.staging.polygon.io
   /v2/aggs/ticker/{cryptoTicker}/prev:
     get:
       description: Get the previous day's open, high, low, and close (OHLC) for the specified cryptocurrency pair.
@@ -1382,11 +1357,6 @@ paths:
       x-polygon-entitlement-market-type:
         description: Crypto data
         name: crypto
-    servers:
-    - description: Polygon Platform API
-      url: https://api.polygon.io
-    - description: Polygon Platform API (Staging)
-      url: https://api.staging.polygon.io
   /v2/aggs/ticker/{cryptoTicker}/range/{multiplier}/{timespan}/{from}/{to}:
     get:
       description: 'Get aggregate bars for a cryptocurrency pair over a given date range in custom time window sizes.
@@ -1602,20 +1572,12 @@ paths:
       x-polygon-entitlement-market-type:
         description: Crypto data
         name: crypto
-    servers:
-    - description: Polygon Platform API
-      url: https://api.polygon.io
-    - description: Polygon Platform API (Staging)
-      url: https://api.staging.polygon.io
 components:
   securitySchemes:
     apiKey:
       in: query
       name: apiKey
       type: apiKey
-x-refined-from:
-- polygon-openapi-original.json
-- polygon-crypto-aggregates-api-openapi.yml
 x-polygon-order:
   crypto:
     market:

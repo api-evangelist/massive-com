@@ -1,8 +1,8 @@
 openapi: 3.2.0
 info:
-  title: Massive Com Options:snapshot API
+  description: The future of fintech.
+  title: Polygon Options:snapshot API
   version: 1.0.0
-  description: 'Operations tagged options:snapshot across 2 of this provider''s published API definitions: polygon-openapi-original.json, polygon-options-snapshot-api-openapi.yml. Each path carries the servers of the definition it was published in.'
 servers:
 - description: Polygon Platform API
   url: https://api.polygon.io
@@ -530,11 +530,6 @@ paths:
           - ticker
           - expiration_date
           - strike_price
-    servers:
-    - description: Polygon Platform API
-      url: https://api.polygon.io
-    - description: Polygon Platform API (Staging)
-      url: https://api.staging.polygon.io
   /v3/snapshot/options/{underlyingAsset}/{optionContract}:
     get:
       description: Get the snapshot of an option contract for a stock equity.
@@ -963,20 +958,12 @@ paths:
       x-polygon-entitlement-market-type:
         description: Options data
         name: options
-    servers:
-    - description: Polygon Platform API
-      url: https://api.polygon.io
-    - description: Polygon Platform API (Staging)
-      url: https://api.staging.polygon.io
 components:
   securitySchemes:
     apiKey:
       in: query
       name: apiKey
       type: apiKey
-x-refined-from:
-- polygon-openapi-original.json
-- polygon-options-snapshot-api-openapi.yml
 x-polygon-order:
   crypto:
     market:

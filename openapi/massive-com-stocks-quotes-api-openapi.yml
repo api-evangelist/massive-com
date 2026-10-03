@@ -1,8 +1,8 @@
 openapi: 3.2.0
 info:
-  title: Massive Com Stocks:quotes API
+  description: The future of fintech.
+  title: Polygon Stocks:quotes API
   version: 1.0.0
-  description: 'Operations tagged stocks:quotes across 2 of this provider''s published API definitions: polygon-openapi-original.json, polygon-stocks-quotes-api-openapi.yml. Each path carries the servers of the definition it was published in.'
 servers:
 - description: Polygon Platform API
   url: https://api.polygon.io
@@ -273,11 +273,6 @@ paths:
       x-polygon-entitlement-market-type:
         description: Stocks data
         name: stocks
-    servers:
-    - description: Polygon Platform API
-      url: https://api.polygon.io
-    - description: Polygon Platform API (Staging)
-      url: https://api.staging.polygon.io
   /v3/quotes/{stockTicker}:
     get:
       description: Get NBBO quotes for a ticker symbol in a given time range.
@@ -526,20 +521,12 @@ paths:
         replaces:
           name: Quotes (NBBO)
           path: get_v2_ticks_stocks_nbbo__ticker___date
-    servers:
-    - description: Polygon Platform API
-      url: https://api.polygon.io
-    - description: Polygon Platform API (Staging)
-      url: https://api.staging.polygon.io
 components:
   securitySchemes:
     apiKey:
       in: query
       name: apiKey
       type: apiKey
-x-refined-from:
-- polygon-openapi-original.json
-- polygon-stocks-quotes-api-openapi.yml
 x-polygon-order:
   crypto:
     market:

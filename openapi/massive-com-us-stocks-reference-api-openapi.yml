@@ -1,8 +1,8 @@
 openapi: 3.2.0
 info:
-  title: Massive Com Us Stocks Reference API
+  description: The future of fintech.
+  title: Polygon Us Stocks Reference API
   version: 1.0.0
-  description: 'Operations tagged us_stocks_reference across 2 of this provider''s published API definitions: polygon-openapi-original.json, polygon-us-stocks-reference-api-openapi.yml. Each path carries the servers of the definition it was published in.'
 servers:
 - description: Polygon Platform API
   url: https://api.polygon.io
@@ -256,11 +256,6 @@ paths:
       - us_stocks_reference
       summary: Get stocks v1 dividends
       x-summary-source: derived
-    servers:
-    - description: Polygon Platform API
-      url: https://api.polygon.io
-    - description: Polygon Platform API (Staging)
-      url: https://api.staging.polygon.io
   /stocks/v1/splits:
     get:
       description: Contains historical stock split and reverse split events for US equities with historical adjustment factors for price normalization.
@@ -446,11 +441,6 @@ paths:
       - us_stocks_reference
       summary: Get stocks v1 splits
       x-summary-source: derived
-    servers:
-    - description: Polygon Platform API
-      url: https://api.polygon.io
-    - description: Polygon Platform API (Staging)
-      url: https://api.staging.polygon.io
   /v1/reference/ipos:
     get:
       description: Contains comprehensive data about Initial Public Offerings (IPOs) and direct listings for US stocks, tracking both historical and pending offerings with detailed pricing, share, and timing information.
@@ -761,20 +751,12 @@ paths:
       - us_stocks_reference
       summary: Get v1 reference ipos
       x-summary-source: derived
-    servers:
-    - description: Polygon Platform API
-      url: https://api.polygon.io
-    - description: Polygon Platform API (Staging)
-      url: https://api.staging.polygon.io
 components:
   securitySchemes:
     apiKey:
       in: query
       name: apiKey
       type: apiKey
-x-refined-from:
-- polygon-openapi-original.json
-- polygon-us-stocks-reference-api-openapi.yml
 x-polygon-order:
   crypto:
     market:

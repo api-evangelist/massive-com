@@ -1,8 +1,8 @@
 openapi: 3.2.0
 info:
-  title: Massive Com Tmx API
+  description: The future of fintech.
+  title: Polygon Tmx API
   version: 1.0.0
-  description: 'Operations tagged tmx across 2 of this provider''s published API definitions: polygon-openapi-original.json, polygon-tmx-api-openapi.yml. Each path carries the servers of the definition it was published in.'
 servers:
 - description: Polygon Platform API
   url: https://api.polygon.io
@@ -376,20 +376,12 @@ paths:
       - tmx
       summary: Get tmx v1 corporate events
       x-summary-source: derived
-    servers:
-    - description: Polygon Platform API
-      url: https://api.polygon.io
-    - description: Polygon Platform API (Staging)
-      url: https://api.staging.polygon.io
 components:
   securitySchemes:
     apiKey:
       in: query
       name: apiKey
       type: apiKey
-x-refined-from:
-- polygon-openapi-original.json
-- polygon-tmx-api-openapi.yml
 x-polygon-order:
   crypto:
     market:

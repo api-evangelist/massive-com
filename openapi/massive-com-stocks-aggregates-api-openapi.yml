@@ -1,8 +1,8 @@
 openapi: 3.2.0
 info:
-  title: Massive Com Stocks:aggregates API
+  description: The future of fintech.
+  title: Polygon Stocks:aggregates API
   version: 1.0.0
-  description: 'Operations tagged stocks:aggregates across 2 of this provider''s published API definitions: polygon-openapi-original.json, polygon-stocks-aggregates-api-openapi.yml. Each path carries the servers of the definition it was published in.'
 servers:
 - description: Polygon Platform API
   url: https://api.polygon.io
@@ -267,11 +267,6 @@ paths:
       x-polygon-entitlement-market-type:
         description: Stocks data
         name: stocks
-    servers:
-    - description: Polygon Platform API
-      url: https://api.polygon.io
-    - description: Polygon Platform API (Staging)
-      url: https://api.staging.polygon.io
   /v1/indicators/macd/{stockTicker}:
     get:
       description: Get moving average convergence/divergence (MACD) data for a ticker symbol over a given time range.
@@ -558,11 +553,6 @@ paths:
       x-polygon-entitlement-market-type:
         description: Stocks data
         name: stocks
-    servers:
-    - description: Polygon Platform API
-      url: https://api.polygon.io
-    - description: Polygon Platform API (Staging)
-      url: https://api.staging.polygon.io
   /v1/indicators/rsi/{stockTicker}:
     get:
       description: Get the relative strength index (RSI) for a ticker symbol over a given time range.
@@ -817,11 +807,6 @@ paths:
       x-polygon-entitlement-market-type:
         description: Stocks data
         name: stocks
-    servers:
-    - description: Polygon Platform API
-      url: https://api.polygon.io
-    - description: Polygon Platform API (Staging)
-      url: https://api.staging.polygon.io
   /v1/indicators/sma/{stockTicker}:
     get:
       description: Get the simple moving average (SMA) for a ticker symbol over a given time range.
@@ -1095,11 +1080,6 @@ paths:
       x-polygon-entitlement-market-type:
         description: Stocks data
         name: stocks
-    servers:
-    - description: Polygon Platform API
-      url: https://api.polygon.io
-    - description: Polygon Platform API (Staging)
-      url: https://api.staging.polygon.io
   /v2/aggs/grouped/locale/us/market/stocks/{date}:
     get:
       description: Get the daily open, high, low, and close (OHLC) for the entire stocks/equities markets.
@@ -1270,11 +1250,6 @@ paths:
       x-polygon-entitlement-market-type:
         description: Stocks data
         name: stocks
-    servers:
-    - description: Polygon Platform API
-      url: https://api.polygon.io
-    - description: Polygon Platform API (Staging)
-      url: https://api.staging.polygon.io
   /v2/aggs/ticker/{stocksTicker}/prev:
     get:
       description: Get the previous day's open, high, low, and close (OHLC) for the specified stock ticker.
@@ -1414,11 +1389,6 @@ paths:
       x-polygon-entitlement-market-type:
         description: Stocks data
         name: stocks
-    servers:
-    - description: Polygon Platform API
-      url: https://api.polygon.io
-    - description: Polygon Platform API (Staging)
-      url: https://api.staging.polygon.io
   /v2/aggs/ticker/{stocksTicker}/range/{multiplier}/{timespan}/{from}/{to}:
     get:
       description: 'Get aggregate bars for a stock over a given date range in custom time window sizes.
@@ -1643,20 +1613,12 @@ paths:
       x-polygon-entitlement-market-type:
         description: Stocks data
         name: stocks
-    servers:
-    - description: Polygon Platform API
-      url: https://api.polygon.io
-    - description: Polygon Platform API (Staging)
-      url: https://api.staging.polygon.io
 components:
   securitySchemes:
     apiKey:
       in: query
       name: apiKey
       type: apiKey
-x-refined-from:
-- polygon-openapi-original.json
-- polygon-stocks-aggregates-api-openapi.yml
 x-polygon-order:
   crypto:
     market:

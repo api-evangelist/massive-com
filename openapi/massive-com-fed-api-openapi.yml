@@ -1,8 +1,8 @@
 openapi: 3.2.0
 info:
-  title: Massive Com Fed API
+  description: The future of fintech.
+  title: Polygon Fed API
   version: 1.0.0
-  description: 'Operations tagged fed across 2 of this provider''s published API definitions: polygon-openapi-original.json, polygon-fed-api-openapi.yml. Each path carries the servers of the definition it was published in.'
 servers:
 - description: Polygon Platform API
   url: https://api.polygon.io
@@ -156,11 +156,6 @@ paths:
       - fed
       summary: Get fed v1 inflation
       x-summary-source: derived
-    servers:
-    - description: Polygon Platform API
-      url: https://api.polygon.io
-    - description: Polygon Platform API (Staging)
-      url: https://api.staging.polygon.io
   /fed/v1/inflation-expectations:
     get:
       description: A table tracking inflation expectations from both market-based and economic model perspectives across different time horizons.
@@ -309,11 +304,6 @@ paths:
       - fed
       summary: Get fed v1 inflation expectations
       x-summary-source: derived
-    servers:
-    - description: Polygon Platform API
-      url: https://api.polygon.io
-    - description: Polygon Platform API (Staging)
-      url: https://api.staging.polygon.io
   /fed/v1/labor-market:
     get:
       description: Labor market indicators from the Federal Reserve, including unemployment rate, labor force participation, average hourly earnings, and job openings data.
@@ -447,11 +437,6 @@ paths:
       - fed
       summary: Get fed v1 labor market
       x-summary-source: derived
-    servers:
-    - description: Polygon Platform API
-      url: https://api.polygon.io
-    - description: Polygon Platform API (Staging)
-      url: https://api.staging.polygon.io
   /fed/v1/treasury-yields:
     get:
       description: A record of U.S. Treasury bond yields across various maturity periods, tracking historical interest rates from short-term to long-term government securities.
@@ -612,20 +597,12 @@ paths:
       - fed
       summary: Get fed v1 treasury yields
       x-summary-source: derived
-    servers:
-    - description: Polygon Platform API
-      url: https://api.polygon.io
-    - description: Polygon Platform API (Staging)
-      url: https://api.staging.polygon.io
 components:
   securitySchemes:
     apiKey:
       in: query
       name: apiKey
       type: apiKey
-x-refined-from:
-- polygon-openapi-original.json
-- polygon-fed-api-openapi.yml
 x-polygon-order:
   crypto:
     market:

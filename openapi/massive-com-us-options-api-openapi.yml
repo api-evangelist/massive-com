@@ -1,8 +1,8 @@
 openapi: 3.2.0
 info:
-  title: Massive Com Us Options API
+  description: The future of fintech.
+  title: Polygon Us Options API
   version: 1.0.0
-  description: 'Operations tagged us_options across 2 of this provider''s published API definitions: polygon-openapi-original.json, polygon-us-options-api-openapi.yml. Each path carries the servers of the definition it was published in.'
 servers:
 - description: Polygon Platform API
   url: https://api.polygon.io
@@ -134,11 +134,6 @@ paths:
       - us_options
       summary: Get options v1 exchanges
       x-summary-source: derived
-    servers:
-    - description: Polygon Platform API
-      url: https://api.polygon.io
-    - description: Polygon Platform API (Staging)
-      url: https://api.staging.polygon.io
   /options/v3/quotes/{ticker}:
     get:
       description: Contains NBBO (National Best Bid and Offer) quote records for US options contracts, capturing bid/ask prices, sizes, and exchange attribution at nanosecond precision.
@@ -289,11 +284,6 @@ paths:
       - us_options
       summary: Get options v3 quotes ticker
       x-summary-source: derived
-    servers:
-    - description: Polygon Platform API
-      url: https://api.polygon.io
-    - description: Polygon Platform API (Staging)
-      url: https://api.staging.polygon.io
   /options/v3/trades/{ticker}:
     get:
       description: Contains individual trade transactions for US options contracts, capturing trade execution details including pricing, timing, and exchange information.
@@ -437,20 +427,12 @@ paths:
       - us_options
       summary: Get options v3 trades ticker
       x-summary-source: derived
-    servers:
-    - description: Polygon Platform API
-      url: https://api.polygon.io
-    - description: Polygon Platform API (Staging)
-      url: https://api.staging.polygon.io
 components:
   securitySchemes:
     apiKey:
       in: query
       name: apiKey
       type: apiKey
-x-refined-from:
-- polygon-openapi-original.json
-- polygon-us-options-api-openapi.yml
 x-polygon-order:
   crypto:
     market:

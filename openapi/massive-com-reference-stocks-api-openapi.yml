@@ -1,8 +1,8 @@
 openapi: 3.2.0
 info:
-  title: Massive Com Reference:stocks API
+  description: The future of fintech.
+  title: Polygon Reference:stocks API
   version: 1.0.0
-  description: 'Operations tagged reference:stocks across 2 of this provider''s published API definitions: polygon-openapi-original.json, polygon-reference-stocks-api-openapi.yml. Each path carries the servers of the definition it was published in.'
 servers:
 - description: Polygon Platform API
   url: https://api.polygon.io
@@ -206,11 +206,6 @@ paths:
           enum:
           - execution_date
           - ticker
-    servers:
-    - description: Polygon Platform API
-      url: https://api.polygon.io
-    - description: Polygon Platform API (Staging)
-      url: https://api.staging.polygon.io
   /vX/reference/financials:
     get:
       description: 'Get historical financial data for a stock ticker.
@@ -771,20 +766,12 @@ paths:
           enum:
           - filing_date
           - period_of_report_date
-    servers:
-    - description: Polygon Platform API
-      url: https://api.polygon.io
-    - description: Polygon Platform API (Staging)
-      url: https://api.staging.polygon.io
 components:
   securitySchemes:
     apiKey:
       in: query
       name: apiKey
       type: apiKey
-x-refined-from:
-- polygon-openapi-original.json
-- polygon-reference-stocks-api-openapi.yml
 x-polygon-order:
   crypto:
     market:

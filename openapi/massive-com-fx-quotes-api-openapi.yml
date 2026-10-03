@@ -1,8 +1,8 @@
 openapi: 3.2.0
 info:
-  title: Massive Com Fx:quotes API
+  description: The future of fintech.
+  title: Polygon Fx:quotes API
   version: 1.0.0
-  description: 'Operations tagged fx:quotes across 2 of this provider''s published API definitions: polygon-openapi-original.json, polygon-fx-quotes-api-openapi.yml. Each path carries the servers of the definition it was published in.'
 servers:
 - description: Polygon Platform API
   url: https://api.polygon.io
@@ -179,20 +179,12 @@ paths:
         replaces:
           name: Historic Forex Ticks
           path: get_v1_historic_forex__from___to___date
-    servers:
-    - description: Polygon Platform API
-      url: https://api.polygon.io
-    - description: Polygon Platform API (Staging)
-      url: https://api.staging.polygon.io
 components:
   securitySchemes:
     apiKey:
       in: query
       name: apiKey
       type: apiKey
-x-refined-from:
-- polygon-openapi-original.json
-- polygon-fx-quotes-api-openapi.yml
 x-polygon-order:
   crypto:
     market:

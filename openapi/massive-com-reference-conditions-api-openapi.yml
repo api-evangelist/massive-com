@@ -1,8 +1,8 @@
 openapi: 3.2.0
 info:
-  title: Massive Com Reference:conditions API
+  description: The future of fintech.
+  title: Polygon Reference:conditions API
   version: 1.0.0
-  description: 'Operations tagged reference:conditions across 2 of this provider''s published API definitions: polygon-openapi-original.json, polygon-reference-conditions-api-openapi.yml. Each path carries the servers of the definition it was published in.'
 servers:
 - description: Polygon Platform API
   url: https://api.polygon.io
@@ -596,20 +596,12 @@ paths:
           - name
           - data_types
           - legacy
-    servers:
-    - description: Polygon Platform API
-      url: https://api.polygon.io
-    - description: Polygon Platform API (Staging)
-      url: https://api.staging.polygon.io
 components:
   securitySchemes:
     apiKey:
       in: query
       name: apiKey
       type: apiKey
-x-refined-from:
-- polygon-openapi-original.json
-- polygon-reference-conditions-api-openapi.yml
 x-polygon-order:
   crypto:
     market:

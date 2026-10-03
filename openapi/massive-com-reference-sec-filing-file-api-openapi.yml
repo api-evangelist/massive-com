@@ -1,8 +1,8 @@
 openapi: 3.2.0
 info:
-  title: Massive Com Reference:sec:filing:file API
+  description: The future of fintech.
+  title: Polygon Reference:sec:filing:file API
   version: 1.0.0
-  description: 'Operations tagged reference:sec:filing:file across 2 of this provider''s published API definitions: polygon-openapi-original.json, polygon-reference-sec-filing-file-api-openapi.yml. Each path carries the servers of the definition it was published in.'
 servers:
 - description: Polygon Platform API
   url: https://api.polygon.io
@@ -90,20 +90,12 @@ paths:
       x-polygon-entitlement-data-type:
         description: Reference data
         name: reference
-    servers:
-    - description: Polygon Platform API
-      url: https://api.polygon.io
-    - description: Polygon Platform API (Staging)
-      url: https://api.staging.polygon.io
 components:
   securitySchemes:
     apiKey:
       in: query
       name: apiKey
       type: apiKey
-x-refined-from:
-- polygon-openapi-original.json
-- polygon-reference-sec-filing-file-api-openapi.yml
 x-polygon-order:
   crypto:
     market:

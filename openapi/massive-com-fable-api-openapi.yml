@@ -1,8 +1,8 @@
 openapi: 3.2.0
 info:
-  title: Massive Com Fable API
+  description: The future of fintech.
+  title: Polygon Fable API
   version: 1.0.0
-  description: 'Operations tagged fable across 2 of this provider''s published API definitions: polygon-openapi-original.json, polygon-fable-api-openapi.yml. Each path carries the servers of the definition it was published in.'
 servers:
 - description: Polygon Platform API
   url: https://api.polygon.io
@@ -355,11 +355,6 @@ paths:
       - fable
       summary: Get consumer spending eu v1 merchant aggregates
       x-summary-source: derived
-    servers:
-    - description: Polygon Platform API
-      url: https://api.polygon.io
-    - description: Polygon Platform API (Staging)
-      url: https://api.staging.polygon.io
   /consumer-spending/eu/v1/merchant-hierarchy:
     get:
       description: Reference data mapping merchants to parent companies, tickers, sectors, and industries across Fable's European consumer transaction panel. Each row represents a single merchant with its corporate hierarchy and classification metadata. Weekly snapshots contain ~3,500 merchants covering ~250 US public companies. Use lookup_name to join with the name field from the merchant-aggregates endpoint, filtering by active_from and active_to to match a specific transaction_date (e.g., active_from.lte=2025-06-15&active_to.gte=2025-06-15).
@@ -637,20 +632,12 @@ paths:
       - fable
       summary: Get consumer spending eu v1 merchant hierarchy
       x-summary-source: derived
-    servers:
-    - description: Polygon Platform API
-      url: https://api.polygon.io
-    - description: Polygon Platform API (Staging)
-      url: https://api.staging.polygon.io
 components:
   securitySchemes:
     apiKey:
       in: query
       name: apiKey
       type: apiKey
-x-refined-from:
-- polygon-openapi-original.json
-- polygon-fable-api-openapi.yml
 x-polygon-order:
   crypto:
     market:

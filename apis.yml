@@ -305,60 +305,6 @@ apis:
     url: json-structure/polygon-ticker-structure.json
   - type: Examples
     url: examples/polygon-reference-tickers-example.json
-- aid: massive-com:massive-com-corporate-actions-api
-  name: Massive (formerly Polygon.io) Corporate Actions API
-  description: Stock splits and dividends.
-  humanURL: https://polygon.io/docs/stocks/ws_getting-started
-  baseURL: wss://socket.polygon.io
-  tags:
-  - Corporate Actions
-  properties:
-  - type: OpenAPI
-    url: openapi/massive-com-corporate-actions-api-openapi.yml
-  - type: Documentation
-    url: https://polygon.io/docs/stocks
-  - type: APIReference
-    url: https://polygon.io/docs/stocks
-  - type: Authentication
-    url: https://polygon.io/docs/getting-started
-  - type: JSONSchema
-    url: json-schema/polygon-aggregate-bar-schema.json
-  - type: JSONStructure
-    url: json-structure/polygon-aggregate-bar-structure.json
-  - type: Examples
-    url: examples/polygon-stocks-aggregate-bars-example.json
-  - type: Documentation
-    url: https://polygon.io/docs/options
-  - type: APIReference
-    url: https://polygon.io/docs/options
-  - type: JSONSchema
-    url: json-schema/polygon-options-contract-schema.json
-  - type: JSONStructure
-    url: json-structure/polygon-options-contract-structure.json
-  - type: Examples
-    url: examples/polygon-options-chain-snapshot-example.json
-  - type: Documentation
-    url: https://polygon.io/docs/indices
-  - type: APIReference
-    url: https://polygon.io/docs/indices
-  - type: Documentation
-    url: https://polygon.io/docs/forex
-  - type: APIReference
-    url: https://polygon.io/docs/forex
-  - type: Examples
-    url: examples/polygon-forex-conversion-example.json
-  - type: Documentation
-    url: https://polygon.io/docs/crypto
-  - type: APIReference
-    url: https://polygon.io/docs/crypto
-  - type: Documentation
-    url: https://polygon.io/docs/stocks/get_v3_reference_tickers
-  - type: JSONSchema
-    url: json-schema/polygon-ticker-schema.json
-  - type: JSONStructure
-    url: json-structure/polygon-ticker-structure.json
-  - type: Examples
-    url: examples/polygon-reference-tickers-example.json
 - aid: massive-com:massive-com-crypto-aggregates-api
   name: Massive (formerly Polygon.io) Crypto:aggregates API
   description: >-
@@ -3654,6 +3600,60 @@ apis:
   properties:
   - type: OpenAPI
     url: openapi/massive-com-us-stocks-reference-api-openapi.yml
+  - type: Documentation
+    url: https://polygon.io/docs/stocks
+  - type: APIReference
+    url: https://polygon.io/docs/stocks
+  - type: Authentication
+    url: https://polygon.io/docs/getting-started
+  - type: JSONSchema
+    url: json-schema/polygon-aggregate-bar-schema.json
+  - type: JSONStructure
+    url: json-structure/polygon-aggregate-bar-structure.json
+  - type: Examples
+    url: examples/polygon-stocks-aggregate-bars-example.json
+  - type: Documentation
+    url: https://polygon.io/docs/options
+  - type: APIReference
+    url: https://polygon.io/docs/options
+  - type: JSONSchema
+    url: json-schema/polygon-options-contract-schema.json
+  - type: JSONStructure
+    url: json-structure/polygon-options-contract-structure.json
+  - type: Examples
+    url: examples/polygon-options-chain-snapshot-example.json
+  - type: Documentation
+    url: https://polygon.io/docs/indices
+  - type: APIReference
+    url: https://polygon.io/docs/indices
+  - type: Documentation
+    url: https://polygon.io/docs/forex
+  - type: APIReference
+    url: https://polygon.io/docs/forex
+  - type: Examples
+    url: examples/polygon-forex-conversion-example.json
+  - type: Documentation
+    url: https://polygon.io/docs/crypto
+  - type: APIReference
+    url: https://polygon.io/docs/crypto
+  - type: Documentation
+    url: https://polygon.io/docs/stocks/get_v3_reference_tickers
+  - type: JSONSchema
+    url: json-schema/polygon-ticker-schema.json
+  - type: JSONStructure
+    url: json-structure/polygon-ticker-structure.json
+  - type: Examples
+    url: examples/polygon-reference-tickers-example.json
+- aid: massive-com:massive-com-corporate-actions-api
+  name: Massive (formerly Polygon.io) Corporate Actions API
+  description: Stock splits and dividends.
+  humanURL: https://polygon.io/docs/stocks/ws_getting-started
+  baseURL: wss://socket.polygon.io
+  tags:
+  - Corporate Actions
+  properties:
+  - type: OpenAPI
+    url: openapi/massive-com-corporate-actions-api-openapi.yml
   - type: Documentation
     url: https://polygon.io/docs/stocks
   - type: APIReference

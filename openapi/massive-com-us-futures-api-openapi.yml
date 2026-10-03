@@ -1,8 +1,8 @@
 openapi: 3.2.0
 info:
-  title: Massive Com Us Futures API
+  description: The future of fintech.
+  title: Polygon Us Futures API
   version: 1.0.0
-  description: 'Operations tagged us_futures across 2 of this provider''s published API definitions: polygon-openapi-original.json, polygon-us-futures-api-openapi.yml. Each path carries the servers of the definition it was published in.'
 servers:
 - description: Polygon Platform API
   url: https://api.polygon.io
@@ -331,11 +331,6 @@ paths:
       summary: futures contracts API
       tags:
       - us_futures
-    servers:
-    - description: Polygon Platform API
-      url: https://api.polygon.io
-    - description: Polygon Platform API (Staging)
-      url: https://api.staging.polygon.io
   /futures/v1/exchanges:
     get:
       description: US futures exchanges and trading venues including major derivatives exchanges (CME, CBOT, NYMEX, COMEX) and other futures market infrastructure for commodity, financial, and other derivative contract trading.
@@ -445,11 +440,6 @@ paths:
       - us_futures
       summary: Get futures v1 exchanges
       x-summary-source: derived
-    servers:
-    - description: Polygon Platform API
-      url: https://api.polygon.io
-    - description: Polygon Platform API (Staging)
-      url: https://api.staging.polygon.io
   /futures/v1/market-status:
     get:
       description: 'Retrieve the current market status for a specific product or products. This endpoint returns real-time indicators, such as open, pause, close, for futures products, along with the corresponding exchange and product codes and an evaluation timestamp. This information enables users to monitor operational conditions and adjust their trading strategies accordingly.
@@ -579,11 +569,6 @@ paths:
       summary: Market Status API
       tags:
       - us_futures
-    servers:
-    - description: Polygon Platform API
-      url: https://api.polygon.io
-    - description: Polygon Platform API (Staging)
-      url: https://api.staging.polygon.io
   /futures/v1/products:
     get:
       description: 'The Products API is a unified source for discovering all supported futures products and retrieving full product specifications. It returns the complete product universe with product codes, names, exchange identifiers, sector and asset class classifications, product type, settlement method, and pricing and quotation details. You can filter by name, exchange, sector, asset class, product type, or date to capture the product set or product definition that existed at a specific point in time. It also retrieves the full specification for a single product, supporting accurate system configuration, analytics, trading workflows, and historical reconciliation.
@@ -1047,11 +1032,6 @@ paths:
       summary: Futures Products API
       tags:
       - us_futures
-    servers:
-    - description: Polygon Platform API
-      url: https://api.polygon.io
-    - description: Polygon Platform API (Staging)
-      url: https://api.staging.polygon.io
   /futures/v1/quotes/{ticker}:
     get:
       description: 'Retrieve quote data for a specified futures contract ticker. Each record includes the best bid and offer prices, sizes, and timestamps, reflecting the prevailing quote environment at each moment. This endpoint supports detailed analysis of price dynamics and liquidity conditions to inform trading decisions and market research.
@@ -1245,11 +1225,6 @@ paths:
       - us_futures
       summary: Get futures v1 quotes ticker
       x-summary-source: derived
-    servers:
-    - description: Polygon Platform API
-      url: https://api.polygon.io
-    - description: Polygon Platform API (Staging)
-      url: https://api.staging.polygon.io
   /futures/v1/schedules:
     get:
       description: 'The Schedules API provides a unified way to retrieve trading schedules for futures markets, returning precise session open and close times, intraday breaks, and any adjustments for holidays or special events. You can filter schedules by session_end_date or retrieve the schedule for a single product using its product code. All times are returned in Coordinated Universal Time (UTC), making it straightforward to align trading, execution, and operational workflows across systems.
@@ -1454,11 +1429,6 @@ paths:
       summary: Futures Schedules API
       tags:
       - us_futures
-    servers:
-    - description: Polygon Platform API
-      url: https://api.polygon.io
-    - description: Polygon Platform API (Staging)
-      url: https://api.staging.polygon.io
   /futures/v1/snapshot:
     get:
       description: Retrieve a snapshot of the most recent futures contract data.
@@ -1763,11 +1733,6 @@ paths:
       summary: futures_snapshot_v1 API
       tags:
       - us_futures
-    servers:
-    - description: Polygon Platform API
-      url: https://api.polygon.io
-    - description: Polygon Platform API (Staging)
-      url: https://api.staging.polygon.io
   /futures/v1/trades/{ticker}:
     get:
       description: 'Retrieve comprehensive, tick-level trade data for a specified futures contract ticker over a defined time range. Each record includes the trade price, size, session start date, and precise timestamps, capturing individual trade events throughout the period. This granular data is essential for constructing aggregated bars and performing detailed analyses of intraday price movements, making it a valuable tool for backtesting, algorithmic strategy development, and market research.
@@ -1943,20 +1908,12 @@ paths:
       - us_futures
       summary: Get futures v1 trades ticker
       x-summary-source: derived
-    servers:
-    - description: Polygon Platform API
-      url: https://api.polygon.io
-    - description: Polygon Platform API (Staging)
-      url: https://api.staging.polygon.io
 components:
   securitySchemes:
     apiKey:
       in: query
       name: apiKey
       type: apiKey
-x-refined-from:
-- polygon-openapi-original.json
-- polygon-us-futures-api-openapi.yml
 x-polygon-order:
   crypto:
     market:

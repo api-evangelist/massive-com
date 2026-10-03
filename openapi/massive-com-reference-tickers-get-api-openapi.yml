@@ -1,8 +1,8 @@
 openapi: 3.2.0
 info:
-  title: Massive Com Reference:tickers:get API
+  description: The future of fintech.
+  title: Polygon Reference:tickers:get API
   version: 1.0.0
-  description: 'Operations tagged reference:tickers:get across 2 of this provider''s published API definitions: polygon-openapi-original.json, polygon-reference-tickers-get-api-openapi.yml. Each path carries the servers of the definition it was published in.'
 servers:
 - description: Polygon Platform API
   url: https://api.polygon.io
@@ -247,11 +247,6 @@ paths:
       x-polygon-entitlement-data-type:
         description: Reference data
         name: reference
-    servers:
-    - description: Polygon Platform API
-      url: https://api.polygon.io
-    - description: Polygon Platform API (Staging)
-      url: https://api.staging.polygon.io
   /vX/reference/tickers/{id}/events:
     get:
       description: Get a timeline of events for the entity associated with the given ticker, CUSIP, or Composite FIGI.
@@ -341,20 +336,12 @@ paths:
         description: Reference data
         name: reference
       x-polygon-experimental: {}
-    servers:
-    - description: Polygon Platform API
-      url: https://api.polygon.io
-    - description: Polygon Platform API (Staging)
-      url: https://api.staging.polygon.io
 components:
   securitySchemes:
     apiKey:
       in: query
       name: apiKey
       type: apiKey
-x-refined-from:
-- polygon-openapi-original.json
-- polygon-reference-tickers-get-api-openapi.yml
 x-polygon-order:
   crypto:
     market:
