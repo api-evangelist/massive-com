@@ -1,5 +1,5 @@
 {
-  "repo": "polygon",
+  "repo": "massive-com",
   "feeds": [
     {
       "source": "https://status.polygon.io/",
@@ -7,5 +7,5 @@
     }
   ],
   "post_count": 0,
-  "fetched": "2026-09-19T20:17:39Z"
+  "fetched": "2026-10-03T12:30:02Z"
 }
