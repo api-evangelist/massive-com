@@ -1406,7 +1406,7 @@ apis:
   name: Massive (formerly Polygon.io) Markets API
   description: Markets, exchanges, holidays, and status.
   humanURL: https://polygon.io/docs/stocks/ws_getting-started
-  baseURL: wss://socket.polygon.io
+  baseURL: https://api.polygon.io
   tags:
   - Markets
   properties:
@@ -1460,7 +1460,7 @@ apis:
   name: Massive (formerly Polygon.io) News API
   description: Ticker news.
   humanURL: https://polygon.io/docs/stocks/ws_getting-started
-  baseURL: wss://socket.polygon.io
+  baseURL: https://api.polygon.io
   tags:
   - News
   properties:
@@ -3330,7 +3330,7 @@ apis:
   name: Massive (formerly Polygon.io) Tickers API
   description: Ticker reference and metadata.
   humanURL: https://polygon.io/docs/stocks/ws_getting-started
-  baseURL: wss://socket.polygon.io
+  baseURL: https://api.polygon.io
   tags:
   - Tickers
   properties:
@@ -3660,7 +3660,7 @@ apis:
   name: Massive (formerly Polygon.io) Corporate Actions API
   description: Stock splits and dividends.
   humanURL: https://polygon.io/docs/stocks/ws_getting-started
-  baseURL: wss://socket.polygon.io
+  baseURL: https://api.polygon.io
   tags:
   - Corporate Actions
   properties:
