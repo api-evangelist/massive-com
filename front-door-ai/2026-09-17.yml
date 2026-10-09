@@ -1,20 +1,24 @@
-# Front Door AI Index — polygon — 2026-09-17
+# Front Door AI Index — massive-com — 2026-09-17
 # AI vocabulary counted on the provider's root page. Generated; do not edit.
 # `score` is null unless ownership is `own` — see front_door_ai.py.
 front_door_ai:
-  slug: polygon
+  slug: massive-com
   lexicon_version: '1.0'
   probed_at: '2026-09-17'
   host: massive.com
   final_host: massive.com
-  ownership: own
-  owner: polygon
-  shares_host_with: null
+  ownership: unresolved
+  owner: null
+  shares_host_with:
+  - polygon
   inherited_from: null
+  alias_of: null
   verdict: scored
-  score: 23
+  score: null
+  band: null
+  band_label: null
   host_score: 23
-  density: 23.0
+  density: null
   words: 1000
   tiers:
     agentic: 7

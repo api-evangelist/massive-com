@@ -42,6 +42,9 @@ artifacts:
   arazzo/polygon-ticker-news-context-workflow.yml:
     method: unknown
     evidence: no authorship recorded
+  asyncapi/polygon-io-asyncapi.yml:
+    method: unknown
+    evidence: no authorship recorded
   asyncapi/polygon-websocket-asyncapi.yml:
     method: unknown
     evidence: no authorship recorded
@@ -52,35 +55,35 @@ artifacts:
     method: searched
     evidence: declared in the artifact
   collections/polygon-aggregates-api.opencollection.json:
-    method: derived
-    evidence: openapi/polygon-aggregates-api
+    method: unknown
+    evidence: no authorship recorded
   collections/polygon-aggregates-api.postman_collection.json:
-    method: derived
-    evidence: openapi/polygon-aggregates-api
+    method: unknown
+    evidence: no authorship recorded
   collections/polygon-books-api.opencollection.json:
-    method: derived
-    evidence: openapi/polygon-books-api
+    method: unknown
+    evidence: no authorship recorded
   collections/polygon-books-api.postman_collection.json:
-    method: derived
-    evidence: openapi/polygon-books-api
+    method: unknown
+    evidence: no authorship recorded
   collections/polygon-contracts-api.opencollection.json:
-    method: derived
-    evidence: openapi/polygon-contracts-api
+    method: unknown
+    evidence: no authorship recorded
   collections/polygon-contracts-api.postman_collection.json:
-    method: derived
-    evidence: openapi/polygon-contracts-api
+    method: unknown
+    evidence: no authorship recorded
   collections/polygon-conversion-api.opencollection.json:
-    method: derived
-    evidence: openapi/polygon-conversion-api
+    method: unknown
+    evidence: no authorship recorded
   collections/polygon-conversion-api.postman_collection.json:
-    method: derived
-    evidence: openapi/polygon-conversion-api
+    method: unknown
+    evidence: no authorship recorded
   collections/polygon-corporateactions-api.opencollection.json:
-    method: derived
-    evidence: openapi/polygon-corporateactions-api
+    method: unknown
+    evidence: no authorship recorded
   collections/polygon-corporateactions-api.postman_collection.json:
-    method: derived
-    evidence: openapi/polygon-corporateactions-api
+    method: unknown
+    evidence: no authorship recorded
   collections/polygon-crypto.opencollection.json:
     method: derived
     evidence: openapi/polygon-crypto
@@ -88,11 +91,11 @@ artifacts:
     method: derived
     evidence: openapi/polygon-crypto
   collections/polygon-dailybars-api.opencollection.json:
-    method: derived
-    evidence: openapi/polygon-dailybars-api
+    method: unknown
+    evidence: no authorship recorded
   collections/polygon-dailybars-api.postman_collection.json:
-    method: derived
-    evidence: openapi/polygon-dailybars-api
+    method: unknown
+    evidence: no authorship recorded
   collections/polygon-forex.opencollection.json:
     method: unknown
     evidence: no authorship recorded
@@ -130,11 +133,11 @@ artifacts:
     method: derived
     evidence: openapi/polygon-options
   collections/polygon-quotes-api.opencollection.json:
-    method: derived
-    evidence: openapi/polygon-quotes-api
+    method: unknown
+    evidence: no authorship recorded
   collections/polygon-quotes-api.postman_collection.json:
-    method: derived
-    evidence: openapi/polygon-quotes-api
+    method: unknown
+    evidence: no authorship recorded
   collections/polygon-reference.opencollection.json:
     method: derived
     evidence: openapi/polygon-reference
@@ -142,11 +145,11 @@ artifacts:
     method: derived
     evidence: openapi/polygon-reference
   collections/polygon-snapshots-api.opencollection.json:
-    method: derived
-    evidence: openapi/polygon-snapshots-api
+    method: unknown
+    evidence: no authorship recorded
   collections/polygon-snapshots-api.postman_collection.json:
-    method: derived
-    evidence: openapi/polygon-snapshots-api
+    method: unknown
+    evidence: no authorship recorded
   collections/polygon-stocks.opencollection.json:
     method: derived
     evidence: openapi/polygon-stocks
@@ -189,6 +192,9 @@ artifacts:
   finops/polygon-finops.yml:
     method: unknown
     evidence: no authorship recorded
+  front-door-ai/2026-09-17.yml:
+    method: unknown
+    evidence: no authorship recorded
   json-ld/polygon-context.jsonld:
     method: unknown
     evidence: no authorship recorded
@@ -216,55 +222,7 @@ artifacts:
   json-structure/polygon-ticker-structure.json:
     method: unknown
     evidence: no authorship recorded
-  kin/checks-2026-09-05T072335.yml:
-    method: generated
-    evidence: Kin Score snapshot written by score.rb
-  kin/score-2026-08-06T210741.yml:
-    method: generated
-    evidence: Kin Score snapshot written by score.rb
-  kin/score-2026-08-07T135032.yml:
-    method: generated
-    evidence: Kin Score snapshot written by score.rb
-  kin/score-2026-08-10T093022.yml:
-    method: generated
-    evidence: Kin Score snapshot written by score.rb
-  kin/score-2026-08-10T111628.yml:
-    method: generated
-    evidence: Kin Score snapshot written by score.rb
-  kin/score-2026-08-11T211707.yml:
-    method: generated
-    evidence: Kin Score snapshot written by score.rb
-  kin/score-2026-08-12T193225.yml:
-    method: generated
-    evidence: Kin Score snapshot written by score.rb
-  kin/score-2026-08-17T064519.yml:
-    method: generated
-    evidence: Kin Score snapshot written by score.rb
-  kin/score-2026-08-19T080027.yml:
-    method: generated
-    evidence: Kin Score snapshot written by score.rb
-  kin/score-2026-08-19T082702.yml:
-    method: generated
-    evidence: Kin Score snapshot written by score.rb
-  kin/score-2026-08-19T114122.yml:
-    method: generated
-    evidence: Kin Score snapshot written by score.rb
-  kin/score-2026-08-20T165047.yml:
-    method: generated
-    evidence: Kin Score snapshot written by score.rb
-  kin/score-2026-08-20T191845.yml:
-    method: generated
-    evidence: Kin Score snapshot written by score.rb
-  kin/score-2026-08-20T205517.yml:
-    method: generated
-    evidence: Kin Score snapshot written by score.rb
-  kin/score-2026-08-21T110057.yml:
-    method: generated
-    evidence: Kin Score snapshot written by score.rb
-  kin/score-2026-08-24T064859.yml:
-    method: generated
-    evidence: Kin Score snapshot written by score.rb
-  kin/score-2026-08-24T171257.yml:
+  kin/checks-2026-09-24T161608.yml:
     method: generated
     evidence: Kin Score snapshot written by score.rb
   kin/score-2026-08-25T125852.yml:
@@ -351,6 +309,123 @@ artifacts:
   kin/score-2026-09-05T072335.yml:
     method: generated
     evidence: Kin Score snapshot written by score.rb
+  kin/score-2026-09-05T144739.yml:
+    method: generated
+    evidence: Kin Score snapshot written by score.rb
+  kin/score-2026-09-05T195450.yml:
+    method: generated
+    evidence: Kin Score snapshot written by score.rb
+  kin/score-2026-09-05T211839.yml:
+    method: generated
+    evidence: Kin Score snapshot written by score.rb
+  kin/score-2026-09-06T011047.yml:
+    method: generated
+    evidence: Kin Score snapshot written by score.rb
+  kin/score-2026-09-06T211804.yml:
+    method: generated
+    evidence: Kin Score snapshot written by score.rb
+  kin/score-2026-09-06T224210.yml:
+    method: generated
+    evidence: Kin Score snapshot written by score.rb
+  kin/score-2026-09-07T200636.yml:
+    method: generated
+    evidence: Kin Score snapshot written by score.rb
+  kin/score-2026-09-07T213054.yml:
+    method: generated
+    evidence: Kin Score snapshot written by score.rb
+  kin/score-2026-09-08T214843.yml:
+    method: generated
+    evidence: Kin Score snapshot written by score.rb
+  kin/score-2026-09-08T232836.yml:
+    method: generated
+    evidence: Kin Score snapshot written by score.rb
+  kin/score-2026-09-10T204815.yml:
+    method: generated
+    evidence: Kin Score snapshot written by score.rb
+  kin/score-2026-09-10T222408.yml:
+    method: generated
+    evidence: Kin Score snapshot written by score.rb
+  kin/score-2026-09-12T062655.yml:
+    method: generated
+    evidence: Kin Score snapshot written by score.rb
+  kin/score-2026-09-12T080032.yml:
+    method: generated
+    evidence: Kin Score snapshot written by score.rb
+  kin/score-2026-09-12T204651.yml:
+    method: generated
+    evidence: Kin Score snapshot written by score.rb
+  kin/score-2026-09-12T221936.yml:
+    method: generated
+    evidence: Kin Score snapshot written by score.rb
+  kin/score-2026-09-13T214537.yml:
+    method: generated
+    evidence: Kin Score snapshot written by score.rb
+  kin/score-2026-09-14T064754.yml:
+    method: generated
+    evidence: Kin Score snapshot written by score.rb
+  kin/score-2026-09-14T210656.yml:
+    method: generated
+    evidence: Kin Score snapshot written by score.rb
+  kin/score-2026-09-14T225847.yml:
+    method: generated
+    evidence: Kin Score snapshot written by score.rb
+  kin/score-2026-09-15T211329.yml:
+    method: generated
+    evidence: Kin Score snapshot written by score.rb
+  kin/score-2026-09-15T230249.yml:
+    method: generated
+    evidence: Kin Score snapshot written by score.rb
+  kin/score-2026-09-16T210549.yml:
+    method: generated
+    evidence: Kin Score snapshot written by score.rb
+  kin/score-2026-09-16T225339.yml:
+    method: generated
+    evidence: Kin Score snapshot written by score.rb
+  kin/score-2026-09-17T211151.yml:
+    method: generated
+    evidence: Kin Score snapshot written by score.rb
+  kin/score-2026-09-17T233623.yml:
+    method: generated
+    evidence: Kin Score snapshot written by score.rb
+  kin/score-2026-09-18T205255.yml:
+    method: generated
+    evidence: Kin Score snapshot written by score.rb
+  kin/score-2026-09-18T231945.yml:
+    method: generated
+    evidence: Kin Score snapshot written by score.rb
+  kin/score-2026-09-19T165737.yml:
+    method: generated
+    evidence: Kin Score snapshot written by score.rb
+  kin/score-2026-09-19T193153.yml:
+    method: generated
+    evidence: Kin Score snapshot written by score.rb
+  kin/score-2026-09-20T205903.yml:
+    method: generated
+    evidence: Kin Score snapshot written by score.rb
+  kin/score-2026-09-20T232958.yml:
+    method: generated
+    evidence: Kin Score snapshot written by score.rb
+  kin/score-2026-09-21T211425.yml:
+    method: generated
+    evidence: Kin Score snapshot written by score.rb
+  kin/score-2026-09-21T233935.yml:
+    method: generated
+    evidence: Kin Score snapshot written by score.rb
+  kin/score-2026-09-22T213221.yml:
+    method: generated
+    evidence: Kin Score snapshot written by score.rb
+  kin/score-2026-09-23T000603.yml:
+    method: generated
+    evidence: Kin Score snapshot written by score.rb
+  kin/score-2026-09-24T064009.yml:
+    method: generated
+    evidence: Kin Score snapshot written by score.rb
+  kin/score-2026-09-24T090406.yml:
+    method: generated
+    evidence: Kin Score snapshot written by score.rb
+  kin/score-2026-09-24T161608.yml:
+    method: generated
+    evidence: Kin Score snapshot written by score.rb
   lifecycle/polygon-lifecycle.yml:
     method: searched
     evidence: declared in the artifact
@@ -365,41 +440,36 @@ artifacts:
     evidence: declared in the artifact
   openapi/_original/polygon-crypto-openapi.yml:
     method: harvested
-    evidence: fetched from the provider as-is; byte-identical to the source
+    evidence: found in openapi/_original/; the fetch URL and bytes were not recorded, so byte-identity
+      to the provider's source is unverified
   openapi/_original/polygon-forex-openapi.yml:
     method: harvested
-    evidence: fetched from the provider as-is; byte-identical to the source
+    evidence: found in openapi/_original/; the fetch URL and bytes were not recorded, so byte-identity
+      to the provider's source is unverified
   openapi/_original/polygon-indices-openapi.yml:
     method: harvested
-    evidence: fetched from the provider as-is; byte-identical to the source
+    evidence: found in openapi/_original/; the fetch URL and bytes were not recorded, so byte-identity
+      to the provider's source is unverified
   openapi/_original/polygon-openapi-original.json:
     method: harvested
-    evidence: fetched from the provider as-is; byte-identical to the source
+    evidence: found in openapi/_original/; the fetch URL and bytes were not recorded, so byte-identity
+      to the provider's source is unverified
   openapi/_original/polygon-options-openapi.yml:
     method: harvested
-    evidence: fetched from the provider as-is; byte-identical to the source
+    evidence: found in openapi/_original/; the fetch URL and bytes were not recorded, so byte-identity
+      to the provider's source is unverified
   openapi/_original/polygon-reference-openapi.yml:
     method: harvested
-    evidence: fetched from the provider as-is; byte-identical to the source
+    evidence: found in openapi/_original/; the fetch URL and bytes were not recorded, so byte-identity
+      to the provider's source is unverified
   openapi/_original/polygon-stocks-openapi.yml:
     method: harvested
-    evidence: fetched from the provider as-is; byte-identical to the source
-  openapi/polygon-aggregates-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
+    evidence: found in openapi/_original/; the fetch URL and bytes were not recorded, so byte-identity
+      to the provider's source is unverified
   openapi/polygon-benzinga-api-openapi.yml:
     method: derived
     evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/polygon-books-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/polygon-contracts-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/polygon-conversion-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/polygon-corporateactions-api-openapi.yml:
+  openapi/polygon-corporate-actions-api-openapi.yml:
     method: derived
     evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
   openapi/polygon-crypto-aggregates-api-openapi.yml:
@@ -415,9 +485,6 @@ artifacts:
     method: derived
     evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
   openapi/polygon-crypto-trades-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/polygon-dailybars-api-openapi.yml:
     method: derived
     evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
   openapi/polygon-etfglobal-api-openapi.yml:
@@ -489,9 +556,6 @@ artifacts:
   openapi/polygon-options-trades-api-openapi.yml:
     method: derived
     evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/polygon-quotes-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
   openapi/polygon-reference-api-openapi.yml:
     method: derived
     evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
@@ -549,9 +613,6 @@ artifacts:
   openapi/polygon-snapshot-api-openapi.yml:
     method: derived
     evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/polygon-snapshots-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
   openapi/polygon-stocks-aggregates-api-openapi.yml:
     method: derived
     evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
@@ -604,26 +665,26 @@ artifacts:
     method: unknown
     evidence: no authorship recorded
   postman/polygon-aggregates-api.postman_collection.json:
-    method: derived
-    evidence: openapi/polygon-aggregates-api
+    method: unknown
+    evidence: no authorship recorded
   postman/polygon-books-api.postman_collection.json:
-    method: derived
-    evidence: openapi/polygon-books-api
+    method: unknown
+    evidence: no authorship recorded
   postman/polygon-contracts-api.postman_collection.json:
-    method: derived
-    evidence: openapi/polygon-contracts-api
+    method: unknown
+    evidence: no authorship recorded
   postman/polygon-conversion-api.postman_collection.json:
-    method: derived
-    evidence: openapi/polygon-conversion-api
+    method: unknown
+    evidence: no authorship recorded
   postman/polygon-corporateactions-api.postman_collection.json:
-    method: derived
-    evidence: openapi/polygon-corporateactions-api
+    method: unknown
+    evidence: no authorship recorded
   postman/polygon-crypto.postman_collection.json:
     method: derived
     evidence: openapi/polygon-crypto
   postman/polygon-dailybars-api.postman_collection.json:
-    method: derived
-    evidence: openapi/polygon-dailybars-api
+    method: unknown
+    evidence: no authorship recorded
   postman/polygon-forex.postman_collection.json:
     method: unknown
     evidence: no authorship recorded
@@ -640,14 +701,14 @@ artifacts:
     method: derived
     evidence: openapi/polygon-options
   postman/polygon-quotes-api.postman_collection.json:
-    method: derived
-    evidence: openapi/polygon-quotes-api
+    method: unknown
+    evidence: no authorship recorded
   postman/polygon-reference.postman_collection.json:
     method: derived
     evidence: openapi/polygon-reference
   postman/polygon-snapshots-api.postman_collection.json:
-    method: derived
-    evidence: openapi/polygon-snapshots-api
+    method: unknown
+    evidence: no authorship recorded
   postman/polygon-stocks.postman_collection.json:
     method: derived
     evidence: openapi/polygon-stocks
