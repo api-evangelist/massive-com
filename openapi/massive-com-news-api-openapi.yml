@@ -64,22 +64,6 @@ paths:
                 $ref: '#/components/schemas/NewsResponse'
 components:
   schemas:
-    NewsResponse:
-      type: object
-      properties:
-        status:
-          type: string
-        request_id:
-          type: string
-        count:
-          type: integer
-        next_url:
-          type: string
-          format: uri
-        results:
-          type: array
-          items:
-            $ref: '#/components/schemas/NewsArticle'
     NewsArticle:
       type: object
       properties:
@@ -114,6 +98,22 @@ components:
           type: array
           items:
             type: string
+    NewsResponse:
+      type: object
+      properties:
+        status:
+          type: string
+        request_id:
+          type: string
+        count:
+          type: integer
+        next_url:
+          type: string
+          format: uri
+        results:
+          type: array
+          items:
+            $ref: '#/components/schemas/NewsArticle'
   securitySchemes:
     apiKeyQuery:
       type: apiKey

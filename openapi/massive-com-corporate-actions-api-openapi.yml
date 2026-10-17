@@ -86,6 +86,43 @@ paths:
                 $ref: '#/components/schemas/DividendsResponse'
 components:
   schemas:
+    DividendsResponse:
+      type: object
+      properties:
+        status:
+          type: string
+        request_id:
+          type: string
+        next_url:
+          type: string
+          format: uri
+        results:
+          type: array
+          items:
+            $ref: '#/components/schemas/Dividend'
+    Dividend:
+      type: object
+      properties:
+        cash_amount:
+          type: number
+        declaration_date:
+          type: string
+          format: date
+        dividend_type:
+          type: string
+        ex_dividend_date:
+          type: string
+          format: date
+        frequency:
+          type: integer
+        pay_date:
+          type: string
+          format: date
+        record_date:
+          type: string
+          format: date
+        ticker:
+          type: string
     StockSplit:
       type: object
       properties:
@@ -112,43 +149,6 @@ components:
           type: array
           items:
             $ref: '#/components/schemas/StockSplit'
-    Dividend:
-      type: object
-      properties:
-        cash_amount:
-          type: number
-        declaration_date:
-          type: string
-          format: date
-        dividend_type:
-          type: string
-        ex_dividend_date:
-          type: string
-          format: date
-        frequency:
-          type: integer
-        pay_date:
-          type: string
-          format: date
-        record_date:
-          type: string
-          format: date
-        ticker:
-          type: string
-    DividendsResponse:
-      type: object
-      properties:
-        status:
-          type: string
-        request_id:
-          type: string
-        next_url:
-          type: string
-          format: uri
-        results:
-          type: array
-          items:
-            $ref: '#/components/schemas/Dividend'
   securitySchemes:
     apiKeyQuery:
       type: apiKey

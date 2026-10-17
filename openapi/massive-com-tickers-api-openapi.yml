@@ -138,19 +138,6 @@ paths:
                 $ref: '#/components/schemas/TickerTypesResponse'
 components:
   schemas:
-    TickerTypesResponse:
-      type: object
-      properties:
-        status:
-          type: string
-        request_id:
-          type: string
-        count:
-          type: integer
-        results:
-          type: array
-          items:
-            $ref: '#/components/schemas/TickerType'
     TickerType:
       type: object
       properties:
@@ -162,22 +149,6 @@ components:
           type: string
         locale:
           type: string
-    TickersResponse:
-      type: object
-      properties:
-        status:
-          type: string
-        request_id:
-          type: string
-        count:
-          type: integer
-        next_url:
-          type: string
-          format: uri
-        results:
-          type: array
-          items:
-            $ref: '#/components/schemas/Ticker'
     Ticker:
       type: object
       properties:
@@ -206,6 +177,22 @@ components:
         last_updated_utc:
           type: string
           format: date-time
+    TickersResponse:
+      type: object
+      properties:
+        status:
+          type: string
+        request_id:
+          type: string
+        count:
+          type: integer
+        next_url:
+          type: string
+          format: uri
+        results:
+          type: array
+          items:
+            $ref: '#/components/schemas/Ticker'
     TickerDetailsResponse:
       type: object
       properties:
@@ -236,6 +223,19 @@ components:
                 type: integer
               weighted_shares_outstanding:
                 type: number
+    TickerTypesResponse:
+      type: object
+      properties:
+        status:
+          type: string
+        request_id:
+          type: string
+        count:
+          type: integer
+        results:
+          type: array
+          items:
+            $ref: '#/components/schemas/TickerType'
   securitySchemes:
     apiKeyQuery:
       type: apiKey

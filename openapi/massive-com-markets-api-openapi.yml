@@ -93,71 +93,6 @@ paths:
                 $ref: '#/components/schemas/MarketStatusResponse'
 components:
   schemas:
-    Market:
-      type: object
-      properties:
-        market:
-          type: string
-        desc:
-          type: string
-    ExchangesResponse:
-      type: object
-      properties:
-        status:
-          type: string
-        request_id:
-          type: string
-        count:
-          type: integer
-        results:
-          type: array
-          items:
-            $ref: '#/components/schemas/Exchange'
-    MarketStatusResponse:
-      type: object
-      properties:
-        market:
-          type: string
-        serverTime:
-          type: string
-          format: date-time
-        exchanges:
-          type: object
-          additionalProperties:
-            type: string
-        currencies:
-          type: object
-          additionalProperties:
-            type: string
-        earlyHours:
-          type: boolean
-        afterHours:
-          type: boolean
-    MarketHoliday:
-      type: object
-      properties:
-        exchange:
-          type: string
-        name:
-          type: string
-        date:
-          type: string
-          format: date
-        status:
-          type: string
-        open:
-          type: string
-        close:
-          type: string
-    MarketsResponse:
-      type: object
-      properties:
-        status:
-          type: string
-        results:
-          type: array
-          items:
-            $ref: '#/components/schemas/Market'
     Exchange:
       type: object
       properties:
@@ -182,6 +117,71 @@ components:
         url:
           type: string
           format: uri
+    MarketsResponse:
+      type: object
+      properties:
+        status:
+          type: string
+        results:
+          type: array
+          items:
+            $ref: '#/components/schemas/Market'
+    MarketStatusResponse:
+      type: object
+      properties:
+        market:
+          type: string
+        serverTime:
+          type: string
+          format: date-time
+        exchanges:
+          type: object
+          additionalProperties:
+            type: string
+        currencies:
+          type: object
+          additionalProperties:
+            type: string
+        earlyHours:
+          type: boolean
+        afterHours:
+          type: boolean
+    Market:
+      type: object
+      properties:
+        market:
+          type: string
+        desc:
+          type: string
+    MarketHoliday:
+      type: object
+      properties:
+        exchange:
+          type: string
+        name:
+          type: string
+        date:
+          type: string
+          format: date
+        status:
+          type: string
+        open:
+          type: string
+        close:
+          type: string
+    ExchangesResponse:
+      type: object
+      properties:
+        status:
+          type: string
+        request_id:
+          type: string
+        count:
+          type: integer
+        results:
+          type: array
+          items:
+            $ref: '#/components/schemas/Exchange'
   securitySchemes:
     apiKeyQuery:
       type: apiKey

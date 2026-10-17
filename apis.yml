@@ -3660,7 +3660,7 @@ apis:
   name: Massive (formerly Polygon.io) Corporate Actions API
   description: Stock splits and dividends.
   humanURL: https://polygon.io/docs/stocks/ws_getting-started
-  baseURL: https://api.polygon.io
+  baseURL: wss://socket.polygon.io
   tags:
   - Corporate Actions
   properties:
