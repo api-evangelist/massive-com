@@ -52,8 +52,8 @@ tags:
 - Market Data
 - Stocks
 - Options
-- Forex
-- Crypto
+- Foreign Exchange
+- Cryptocurrency
 - Indices
 - Futures
 - WebSocket
@@ -183,8 +183,7 @@ apis:
   - Index-based product pricing
 - name: Polygon.io Forex API
   tags:
-  - Forex
-  - FX
+  - Foreign Exchange
   - Currency
   - Market Data
   tags_raw:
@@ -210,6 +209,9 @@ apis:
   - FX trading strategies
 - name: Polygon.io Crypto API
   tags:
+  - Cryptocurrency
+  - Market Data
+  tags_raw:
   - Crypto
   - Cryptocurrency
   - Market Data
