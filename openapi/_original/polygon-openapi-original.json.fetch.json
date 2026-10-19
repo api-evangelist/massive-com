@@ -1,0 +1,12 @@
+{
+ "url": "https://api.massive.com/openapi",
+ "requested_url": "https://polygon.io/openapi.json",
+ "status": 200,
+ "content_type": "application/json",
+ "bytes": 1167930,
+ "sha256": "e9fde5d06286cc54d669cb83a9b78f221aa6f0881d5029a7945f29669d49af2f",
+ "fetched_at": "2026-10-19",
+ "fetched_by": "APIEvangelist-Harvest/1.0 (+https://apievangelist.com)",
+ "match": "equivalent",
+ "note": "Re-fetched from the provider by verify-openapi-sources.py; the provider's current document describes the same operations (Jaccard 0.98), but the bytes differ, so the archive is an earlier or reformatted copy."
+}
