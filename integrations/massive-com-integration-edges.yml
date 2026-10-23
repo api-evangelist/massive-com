@@ -128,6 +128,36 @@ edges:
     detected: '2026-10-21'
   detected_by: sweep-x402-micropayments.py
   first_seen: '2026-10-21'
+- partner_name: Packagist
+  partner: packagist
+  partner_match: register
+  type: register
+  direction: provider-built
+  category: official SDK (PHP)
+  evidence: https://packagist.org/packages/polygon-io/api
+  channel: package-registry
+  relationship: distribution-channel
+  contract_reference:
+    register: Packagist (public registry JSON)
+    spec_file: null
+    language: PHP
+    packages:
+    - name: polygon-io/api
+      version: v1.2.3
+      released: '2021-07-16'
+      released_field: time
+      lapsed: true
+      page: https://packagist.org/packages/polygon-io/api
+      repo_leg: github-org:polygon-io
+      publisher_leg: org:polygon-io
+      matched_by: github-org
+    current: false
+    signal_note: 'an official package on the registry: distribution, not an integration; lapsed = no release in
+      24 months'
+    detected_by: sweep-php-dart-elixir-package-registries.py
+    detected: '2026-10-22'
+  detected_by: sweep-php-dart-elixir-package-registries.py
+  first_seen: '2026-10-22'
 generated: '2026-10-18'
 method: searched
 source:
@@ -164,3 +194,6 @@ checked:
 - https://x402-list.com
 - https://x402.org/members/
 - https://x402scan.com
+- https://hex.pm/api
+- https://packagist.org/packages
+- https://pub.dev/api

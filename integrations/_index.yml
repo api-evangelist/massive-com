@@ -123,3 +123,34 @@
     detected: '2026-10-21'
   status: not-a-workflow
   arazzo: null
+- slug: massive-com-packagist
+  label: Packagist
+  partner: packagist
+  partner_name: Packagist
+  category: official SDK (PHP)
+  type: register
+  channel: package-registry
+  evidence: https://packagist.org/packages/polygon-io/api
+  source: edge
+  relationship: distribution-channel
+  contract_reference:
+    register: Packagist (public registry JSON)
+    spec_file: null
+    language: PHP
+    packages:
+    - name: polygon-io/api
+      version: v1.2.3
+      released: '2021-07-16'
+      released_field: time
+      lapsed: true
+      page: https://packagist.org/packages/polygon-io/api
+      repo_leg: github-org:polygon-io
+      publisher_leg: org:polygon-io
+      matched_by: github-org
+    current: false
+    signal_note: 'an official package on the registry: distribution, not an integration; lapsed = no release in
+      24 months'
+    detected_by: sweep-php-dart-elixir-package-registries.py
+    detected: '2026-10-22'
+  status: not-a-workflow
+  arazzo: null
