@@ -939,3 +939,9 @@ x-polygon-order:
       - stocks/vX/listings
       - stocks/vX/listing/{identifier_type}/{identifier}
       - stocks/vX/listings/updates
+x-provenance:
+  method: harvested
+  publisher: Massive (formerly Polygon.io)
+  source: https://api.massive.com/openapi
+  note: split by refine-openapis from the provider's own published document, verified by fetch (openapi/_original/*.fetch.json);
+    stamped by stamp-openapi-provenance.py (roadmap#793)
